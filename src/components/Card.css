@@ -1,0 +1,35 @@
+.card-container {
+  cursor: pointer;
+  height: 300px;
+  margin: 0;
+  perspective: 600;
+  position: relative;
+  width: 100%;
+}
+
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card.isFlipped {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #eaeaed;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.card-image {
+  width: 100%;
+}
