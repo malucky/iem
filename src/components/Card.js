@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './Card.css';
 
@@ -34,5 +35,19 @@ class Card extends Component {
     );
   }
 }
+
+Card.PropTypes = {
+  data: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    chineseName: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
+    chineseTime: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    chineseLocation: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    prices: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+    url: PropTypes.string.isRequired
+  })
+};
 
 export default Card;

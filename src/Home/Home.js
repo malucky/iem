@@ -8,8 +8,8 @@ const Home = () => {
     <section className="page Home">
       <ul className="show-list">
         {
-          shows.map(show => (
-            <li className="show-item">
+          shows.map((show, i) => (
+            <li className="show-item" key={i}>
               <Card data={show}/>
             </li>
           ))
