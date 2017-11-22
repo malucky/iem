@@ -24,6 +24,11 @@ class Card extends Component {
         <div className={classnames('card', { isFlipped })}>
           <div className="side">
             <img className="card-image" src={show.image} alt={`${show.name}`} />
+            <div className="card-background">
+              <div className="card-description"> 
+                <h3 className="card-title">{show.name}</h3>
+              </div>
+            </div>
           </div>
           <div className="side back">
             <h3 className="card-title">{`${show.name} - ${show.chineseName}`}</h3>

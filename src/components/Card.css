@@ -1,10 +1,14 @@
 .card-container {
   cursor: pointer;
-  height: 300px;
+  box-shadow: 0 0.11765rem 0.41176rem 0 rgba(0,0,0,0.2);
+  height: 80%;
+  left: 50%;
   margin: 0;
   perspective: 600;
   position: relative;
-  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
 
 .card {
@@ -31,5 +35,36 @@
 }
 
 .card-image {
+  height: 60%;
+}
+
+.card-background {
+  background: #ffffff;
+  bottom: 0;
+  box-shadow: 0 0.11765rem 0.41176rem 0 rgba(0,0,0,0.2);
+  font-size: 1rem;
+  height: 40%;
+  position: absolute;
+  right: 0;
   width: 100%;
+}
+
+.card-background::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -60px;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  -webkit-transform: skewY(20deg);
+  -moz-transform: skewY(20deg);
+  -ms-transform: skewY(20deg);
+  -o-transform: skewY(20deg);
+  transform: skewY(20deg);
+  -webkit-backface-visibility: hidden;
+}
+
+.card-description {
+  position: relative;
 }

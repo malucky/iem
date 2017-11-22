@@ -2,9 +2,21 @@ import rucoImage from '../images/Ruco&Kate_Caesars.png';
 import jackyCheungMohegan from '../images/Jacky_Cheung_Mohegan_Sun_2018.jpg';
 import jackyCheungVancouver from '../images/Jacky_Cheung_Vancouver.jpg';
 import loveConcert from '../images/Xmas_Love_Romance_Concert.jpg';
+import jackyImage from '../images/jacky.png';
 
 const shopDomain = 'https://www.iemshowplace.com';
 const shows = [
+  {
+    name: 'Jacky Cheung "A Classic Tour" Connecticut Stop',
+    chineseName: '學友• 經典世界巡迴演唱會 康州站',
+    time: '2/2/2018(Fri) 9:00 PM, 2/3/2018(Sat) 9:00 PM, 2/4/2018(Sun) 6:00 PM',
+    chineseTime: '2/2/2018(五) 晚上九點, 2/3/2018(六) 晚上九點, 2/4/2018(日) 下午6點',
+    location: 'Mohegan Sun Arena：1 Mohegan Sun Blvd, Uncasville, CT 06382, USA',
+    chineseLocation: '康州金神體育館',
+    image: jackyImage,
+    prices: ['$138', '$238', '$368', 'VIP $438', 'VVIP $488'],
+    url: `${shopDomain}/jacky-cheung-mohegan-sun/`
+  },
   {
     name: 'Ruco Chan & Kate Tsui Xmas in Concert 2017',
     chineseName: '陳展鵬 & 徐子珊 聖誕節大西洋城演唱會',
@@ -26,17 +38,6 @@ const shows = [
     image: loveConcert,
     prices: ['$48', '$78', '$118', 'VIP $148'],
     url: `${shopDomain}/love-romance-concert/`
-  },
-  {
-    name: 'Jacky Cheung "A Classic Tour" Connecticut Stop',
-    chineseName: '學友• 經典世界巡迴演唱會 康州站',
-    time: '2/2/2018(Fri) 9:00 PM, 2/3/2018(Sat) 9:00 PM, 2/4/2018(Sun) 6:00 PM',
-    chineseTime: '2/2/2018(五) 晚上九點, 2/3/2018(六) 晚上九點, 2/4/2018(日) 下午6點',
-    location: 'Mohegan Sun Arena：1 Mohegan Sun Blvd, Uncasville, CT 06382, USA',
-    chineseLocation: '康州金神體育館',
-    image: jackyCheungMohegan,
-    prices: ['$138', '$238', '$368', 'VIP $438', 'VVIP $488'],
-    url: `${shopDomain}/jacky-cheung-mohegan-sun/`
   },
   {
     name: 'Jacky Cheung "A Classic Tour" Vancouver Stop',
