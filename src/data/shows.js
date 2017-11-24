@@ -1,5 +1,5 @@
 import rucoImage from '../images/Ruco&Kate_Caesars.png';
-import jackyCheungMohegan from '../images/Jacky_Cheung_Mohegan_Sun_2018.jpg';
+// import jackyCheungMohegan from '../images/Jacky_Cheung_Mohegan_Sun_2018.jpg';
 import jackyCheungVancouver from '../images/Jacky_Cheung_Vancouver.jpg';
 import loveConcert from '../images/Xmas_Love_Romance_Concert.jpg';
 import jackyImage from '../images/jacky.png';
